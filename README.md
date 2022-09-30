@@ -55,7 +55,7 @@ Code and Instructions are in the Baselines.py file.
 ### Installation
 
 Install the above software packages as per the following example:
-conda install -c conda-forge osmnx
+conda install -c conda-forge sklearn
 
 To get a local copy up and running follow these simple steps.
 
