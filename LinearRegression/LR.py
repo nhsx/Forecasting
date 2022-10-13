@@ -33,6 +33,7 @@ def train_test_split(data, n_test):
 # forecast function
 from sklearn.linear_model import LinearRegression
 from numpy import asarray
+
 def forecast(train, testX):
     train = asarray(train)
     trainX, trainy = train[:, :-1], train[:, -1]
@@ -49,7 +50,7 @@ def walk_forward(data, n_test):
 
     for i in range(len(test)):
         x_test, y_test = test[i, :-1], test[i, 0]
-        yhat = model.predict(history, x_test)
+        yhat = forecast(history, x_test)
         predictions.append(yhat)
         history.append(test[i])
         print('>test=%.1f, predicted=%.1f' % (y_test, yhat))
