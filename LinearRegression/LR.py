@@ -49,7 +49,7 @@ def walk_forward(data, n_test):
 
     for i in range(len(test)):
         x_test, y_test = test[i, :-1], test[i, 0]
-        yhat = xgboost_forecast(history, x_test)
+        yhat = model.predict(history, x_test)
         predictions.append(yhat)
         history.append(test[i])
         print('>test=%.1f, predicted=%.1f' % (y_test, yhat))
