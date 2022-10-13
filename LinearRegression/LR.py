@@ -2,10 +2,15 @@
 
 # Useful for baselines, and sometimes also the best model on smaller datasets.
 
+import pandas as pd
+import numpy as np
+from numpy import asarray
+from sklearn.linear_model import (LinearRegression, ElasticNet, Ridge, Lasso, HuberRegressor)
+from numpy import asarray
+
 # How to run for univariate data.
 
 # read in the data
-
 df = pd.read_csv('../data/weather.csv')
 df['date'] = pd.to_datetime(df[['Day','Month','Year']])
 df.set_index('date',inplace=True, drop=True)
@@ -25,15 +30,12 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
         agg.dropna(inplace=True)
     return agg.values
   
-  #split a univariate dataset into train/test sets
+#split a univariate dataset into train/test sets
 def train_test_split(data, n_test):
     return data[:-n_test, :], data[-n_test:, :]
  
 
 # forecast function
-from sklearn.linear_model import LinearRegression
-from numpy import asarray
-
 def forecast(train, testX):
     train = asarray(train)
     trainX, trainy = train[:, :-1], train[:, -1]
@@ -62,6 +64,7 @@ def walk_forward(data, n_test):
   
 #set input range and print a forecast length here of length 6 alongside test data
 # set z = to how long you want to forecast.
+# z = 3
 data = series_to_supervised(df, n_in=len(df-z))
 
 rmse,mae, y, yhat = walk_forward(data, z)
@@ -74,6 +77,8 @@ plt.plot(y, label='test')
 plt.plot(yhat, label='Predicted')
 plt.legend()
 plt.show();
+
+
 
 
 # For multivariate the following code will work
