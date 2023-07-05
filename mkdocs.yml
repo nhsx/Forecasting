@@ -1,12 +1,9 @@
 site_name: Forecasting
 site_url: https://nhsx.github.io/Forecasting/
-
 nav:
   - Home: index.md
-
-
 theme:
-  - name: material
+  name: material
   
 
 
