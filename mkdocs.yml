@@ -1,8 +1,11 @@
 site_name: Forecasting
-site_url: https://Forecasting.com/
+site_url: https://nhsengland.github.io/Forecasting.com/
 
 nav:
   - Home: index.md
+
+theme:
+  - name: material
   
 
 
