@@ -3,7 +3,7 @@ site_url: https://nhsengland.github.io/Forecasting.com/
 
 nav:
   - Home: index.md
-  - Contributing: contributing.md
+
 
 theme:
   - name: material
