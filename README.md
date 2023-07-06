@@ -67,6 +67,10 @@ To clone the repo:
 
 The data sources are saved for your use in the data folder in the repo, or are widely available with links to the data within the workbooks. 
 
+### Second Forecasting Repo - More Advanced
+
+(Forecasting_2)[https://github.com/nhsx/Time_Series_Forecasting_MS/tree/main]
+
 ### Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
