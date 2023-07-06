@@ -69,7 +69,8 @@ The data sources are saved for your use in the data folder in the repo, or are w
 
 ### Second Forecasting Repo - More Advanced
 
-_See (Forecasting_2)[https://github.com/nhsx/Time_Series_Forecasting_MS/tree/main]__for a more advanced deeper dive into univariate forecasting._
+_See [Forecasting_2](https://github.com/nhsx/Time_Series_Forecasting_MS/tree/main) for a deeper dive into univariate forecasting._
+
 
 ### Contributing
 
