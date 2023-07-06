@@ -9,4 +9,4 @@ In this way the forecast becomes a combination of the most recent data's effect,
 This also puts more value on the most recent data than further away data. Likewise the further into the future you forecast, the closer the data forecast resembles the mean. 
 It should be note that ARMA models also exist, where the data is already stationary and does not require differencing. These would resemble (1,0,1) in the model parameters.
 
-Further reading available here - [https://github.com/nhsx/Time_Series_Forecasting_MS/blob/main/docs/sarimax.md]
+Further reading available here - [ARIMA/SARIMAX] (https://github.com/nhsx/Time_Series_Forecasting_MS/blob/main/docs/sarimax.md)
